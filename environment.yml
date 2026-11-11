@@ -1,0 +1,18 @@
+# sprint14ML — portable conda env, modded from sprint10ML
+# pandas and scikit-learn updated to match Tripleten's jupyter kernel
+# (no build strings, so it can solve on another OS/CPU). Create it with:
+#   conda env create -f environment.yml
+#   conda activate sprint14ML
+#   python -m ipykernel install --user --name sprint14ML --display-name "sprint14ML"
+name: sprint14ML
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7.12
+  - numpy=1.21.6
+  - pandas=1.2.4
+  - scipy=1.7.3
+  - scikit-learn=0.24.1
+  - joblib=0.16.0
+  - matplotlib=3.5.3
+  - ipykernel=6.16.2
